@@ -1,14 +1,6 @@
 {
-  "name": "jdesign-vue",
-  "version": "0.0.0-dev.1",
-  "description": "A Component Library for Vue",
+  "preview": true,
   "author": "jvb",
-  "keywords": [
-    "component library",
-    "ui framework",
-    "ui",
-    "vue"
-  ],
   "license": "MIT",
   "homepage": "https://jdesign.vvimo.com",
   "bugs": {
@@ -18,21 +10,29 @@
     "type": "git",
     "url": "git+https://github.com/jvbf2e/jdesign-vue.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "lib/index.js",
-  "module": "es/index.mjs",
-  "types": "es/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": ">= 16"
+  "devDependencies": {
+    "@jvbf2e/eslint-config-vue": "^0.0.3",
+    "@jvbf2e/prettier-config": "^0.0.3",
+    "@jvbf2e/stylelint-config": "^0.0.1",
+    "sass": "^1.54.4",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "typescript": "^4.7.4"
   },
-  "browserslist": [
-    "> 1%",
-    "not ie 11",
-    "not op_mini all"
-  ]
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@jvbf2e/eslint-config-vue"
+    ]
+  },
+  "prettier": "@jvbf2e/prettier-config",
+  "stylelint": {
+    "extends": [
+      "@jvbf2e/stylelint-config",
+      "stylelint-config-recommended-vue/scss",
+      "stylelint-config-standard-scss"
+    ]
+  }
 }
