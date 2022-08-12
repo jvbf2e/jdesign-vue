@@ -1,0 +1,38 @@
+{
+  "name": "jdesign-vue",
+  "version": "0.0.0-dev.1",
+  "description": "A Component Library for Vue",
+  "author": "jvb",
+  "keywords": [
+    "component library",
+    "ui framework",
+    "ui",
+    "vue"
+  ],
+  "license": "MIT",
+  "homepage": "https://jdesign.vvimo.com",
+  "bugs": {
+    "url": "https://github.com/jvbf2e/jdesign-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvbf2e/jdesign-vue.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "types": "es/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}
